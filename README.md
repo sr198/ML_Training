@@ -1,2 +1,2 @@
 # ML_Training
-Sample source created for ML training classes
+Python source code and other materials used for ML Training classes Spring 2020.
