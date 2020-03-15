@@ -45,8 +45,8 @@ def graph_my_data( data_frame ):
 def simple_split_traing_test_set( data_frame:pd.DataFrame, test_ratio ):
     shuffled_indices = np.random.permutation( len(data_frame ))
     test_set_size = int( len(data_frame) * test_ratio )
-    test_indices = shuffled_indices[:test_set_size]
-    train_incides = shuffled_indices[test_set_size:]
+    train_indices = shuffled_indices[:test_set_size]
+    test_indices = shuffled_indices[test_set_size:]
     return data_frame.iloc[train_indices], data_frame.iloc[test_indices]
 
 #We will use scikit-learn's train_test_split method
